@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.12.0",
-    "generatedAt": "2026-11-17T05:04:41.392071964Z",
+    "version": "1.13.0",
+    "generatedAt": "2026-11-17T05:05:15.112032121Z",
     "templateType": "trip_l",
     "propertyId": "131fe50c-b86a-4a0b-a01c-5c051c25ad0e",
     "homepageId": "01a0af0b-c092-7bae-b6a9-e3b262dc4c59"
@@ -2310,7 +2310,7 @@
                     "id": "01a11a33-3d79-73cf-8077-340f2ba91bc8",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_hero/1791440927545-szbyba5tyl.jpg",
                     "sortOrder": 0,
-                    "description": "",
+                    "description": "반려견",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -2318,7 +2318,7 @@
                     "id": "01a11a33-3da3-7a77-931f-c1455222c215",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_hero/1791440927540-zuqbeutbkd.jpg",
                     "sortOrder": 1,
-                    "description": "반려견",
+                    "description": "프라이빗",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -2326,7 +2326,7 @@
                     "id": "01a11a33-3daa-7bb0-9d99-429b8db1a453",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_hero/1791440927548-fjwmbf5gbc.jpg",
                     "sortOrder": 2,
-                    "description": "프라이빗",
+                    "description": "힐링",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -2334,7 +2334,7 @@
                     "id": "01a11a33-3daa-7015-8d80-6916632f02dc",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_hero/1791440927551-mj9yl8gdb0.jpg",
                     "sortOrder": 3,
-                    "description": "힐링",
+                    "description": "",
                     "isSelected": true,
                     "blockId": null
                   },
