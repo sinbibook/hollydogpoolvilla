@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.23.0",
-    "generatedAt": "2026-11-24T09:02:40.548374537Z",
+    "version": "1.24.0",
+    "generatedAt": "2026-11-24T09:04:17.819222612Z",
     "templateType": "trip_l",
     "propertyId": "131fe50c-b86a-4a0b-a01c-5c051c25ad0e",
     "homepageId": "01a0af0b-c092-7bae-b6a9-e3b262dc4c59"
@@ -2495,8 +2495,8 @@
                 "title": "오시는길",
                 "images": [
                   {
-                    "id": "01a0af0c-0ceb-7914-afc3-64b0385f8ed0",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/directions_hero/1789643182080-6h9uzlssfg.jpg",
+                    "id": "01a20ccc-7081-7704-9f53-90f2e1d6610c",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/directions_hero/1795511053952-eijz0o49xa.jpg",
                     "sortOrder": 0,
                     "description": "",
                     "isSelected": true,
@@ -2836,8 +2836,8 @@
                 "title": "이용안내",
                 "images": [
                   {
-                    "id": "01a0af0c-0cf9-7aba-a1c5-69a29fa7ca4e",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/reservation_hero/1789643182011-mwmtef33sh.jpg",
+                    "id": "01a20ccc-71be-72e0-a62a-46f83c03d673",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/reservation_hero/1795511053944-vjnkv26l35.JPG",
                     "sortOrder": 0,
                     "description": "",
                     "isSelected": true,
