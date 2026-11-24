@@ -133,14 +133,8 @@ var HeaderFooterLoader = {
 
     // layout-map 페이지 체크
     if (filename === 'layout-map') {
-      var layoutEnabled = (data.homepage &&
-                           data.homepage.customFields &&
-                           data.homepage.customFields.pages &&
-                           data.homepage.customFields.pages.layoutMap &&
-                           data.homepage.customFields.pages.layoutMap.sections &&
-                           data.homepage.customFields.pages.layoutMap.sections[0] &&
-                           data.homepage.customFields.pages.layoutMap.sections[0].enabled) !== false;
-      if (!layoutEnabled) {
+      // 헤더 「미리보기」 / room.html 객실 탭 「미리보기」 숨김과 같은 기준(BaseMapper.isLayoutMapEnabled)
+      if (!BaseMapper.isLayoutMapEnabled(data)) {
         window.location.href = '404.html';
         return;
       }
@@ -148,6 +142,12 @@ var HeaderFooterLoader = {
   },
 
   mapPageContent: function(data) {
+    // Swiper loop이 관리하는 슬라이드를 교체하기 전에 인스턴스를 정리한다.
+    var heroSwiperEl = document.querySelector('.con0 .swiper-container');
+    if (heroSwiperEl && heroSwiperEl.swiper) {
+      heroSwiperEl.swiper.destroy(true, true);
+    }
+
     // SEO: 페이지 종류와 무관하게 전역 seo 메타태그를 먼저 주입 (공통 base-mapper)
     if (typeof BaseMapper !== 'undefined') BaseMapper.updateMetaTags(data);
 
@@ -181,25 +181,32 @@ var HeaderFooterLoader = {
   },
 
   reinitializeSwiper: function() {
-    // con0 Swiper 재초기화 (동적 슬라이드 생성 후)
+    // 모든 페이지의 히어로는 매핑이 끝난 뒤 한 번만 초기화한다.
     var con0Container = document.querySelector('.con0');
-    if (con0Container) {
-      var con0SwiperEl = con0Container.querySelector('.swiper-container');
-      if (con0SwiperEl && con0SwiperEl.swiper) {
-        con0SwiperEl.swiper.destroy(true, true);
-      }
+    var con0SwiperEl = con0Container && con0Container.querySelector('.swiper-container');
+    if (con0SwiperEl) {
+      if (con0SwiperEl.swiper) con0SwiperEl.swiper.destroy(true, true);
 
-      new Swiper(con0Container.querySelector(".swiper-container"), {
+      var heroSlides = con0SwiperEl.querySelectorAll('.swiper-slide').length;
+      var nextButton = con0Container.querySelector('.swiper-button-next');
+      var prevButton = con0Container.querySelector('.swiper-button-prev');
+      // 1장일 때 생성된 aria-disabled가 여러 장으로 갱신될 때 남지 않도록 한다.
+      [nextButton, prevButton].forEach(function(button) {
+        if (button) button.removeAttribute('aria-disabled');
+      });
+
+      new Swiper(con0SwiperEl, {
         slidesPerView: 1,
-        loop: con0Container.querySelectorAll('.swiper-slide').length > 1, // 슬라이드 부족 시 loop 비활성 (Swiper 경고 방지)
-        effect: "fade",
-        autoplay: {
+        loop: heroSlides > 1,
+        effect: 'fade',
+        fadeEffect: { crossFade: true },
+        autoplay: heroSlides > 1 ? {
           delay: 2500,
           disableOnInteraction: false,
-        },
+        } : false,
         navigation: {
-          nextEl: con0Container.querySelector(".swiper-button-next"),
-          prevEl: con0Container.querySelector(".swiper-button-prev"),
+          nextEl: nextButton,
+          prevEl: prevButton,
         },
       });
     }
@@ -215,14 +222,20 @@ var HeaderFooterLoader = {
         con3SwiperEl.swiper.destroy(true, true);
       }
 
+      var con3SlideCount = con3Container.querySelectorAll('.swiper-slide').length;
+      // 객실이 1개면 넘길 슬라이드가 없으니 < | > 버튼 묶음(.swiperNavi)을 PC·모바일 모두 숨긴다.
+      // 미리보기에서 객실 수가 바뀌어 다시 그릴 때를 위해 2개 이상이면 원래대로 되돌린다.
+      var con3Navi = con3Container.querySelector('.swiperNavi');
+      if (con3Navi) con3Navi.style.display = con3SlideCount > 1 ? '' : 'none';
+
       new Swiper(con3Container.querySelector(".swiper-container"), {
         slidesPerView: 1,
-        loop: con3Container.querySelectorAll('.swiper-slide').length > 1, // 슬라이드 부족 시 loop 비활성 (Swiper 경고 방지)
+        loop: con3SlideCount > 1, // 슬라이드 부족 시 loop 비활성 (Swiper 경고 방지)
         effect: "fade",
-        autoplay: {
+        autoplay: con3SlideCount > 1 ? {
           delay: 4000,
           disableOnInteraction: false,
-        },
+        } : false,
         navigation: {
           nextEl: con3Container.querySelector(".swiper-button-next"),
           prevEl: con3Container.querySelector(".swiper-button-prev"),
