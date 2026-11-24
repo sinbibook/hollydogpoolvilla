@@ -1745,3 +1745,29 @@ body {
 [data-consult='off'] .ft_btn_reserve.on {
   bottom: 6px;
 }
+
+/* ── 푸터 농어촌민박사업자 이미지 (템플릿 확장) ─────────────────────
+   customFields.footer.ruralStayMark 가 있을 때만 매퍼가 노출한다(마크업 기본 숨김).
+   로고 아래, 연락처 정보(.info) 위에 독립된 줄로 둔다. 정렬은 푸터 텍스트 정렬을 따른다
+   (1440 초과: 왼쪽 / 1440 이하: 가운데) — 이미지를 inline-block 으로 두어 text-align 을 탄다.
+   표시마크 이미지는 세로형(마크 + 신고번호 박스)이라 폭을 고정(PC 180px / 모바일 160px)하고 높이는 비율에 맡긴다.
+   신고번호가 읽히도록 모바일에서도 160px 아래로 줄이지 않는다. */
+/* .info 는 위 여백(45px)이 있어 이미지 줄 아래가 벌어지므로 그만큼 당겨 로고 쪽 간격(50px)과 맞춘다.
+   숨김(display: none)일 때는 여백도 사라져 기존 푸터와 같다. */
+.footer .ruralStayMarkWrap {
+  margin-bottom: -20px;
+  line-height: 0;
+}
+.footer .ruralStayMark {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .footer .ruralStayMark {
+    width: 160px;
+  }
+}
