@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.29.0",
-    "generatedAt": "2026-11-24T09:20:37.878801221Z",
+    "version": "1.30.0",
+    "generatedAt": "2026-11-24T09:23:32.400603556Z",
     "templateType": "trip_l",
     "propertyId": "131fe50c-b86a-4a0b-a01c-5c051c25ad0e",
     "homepageId": "01a0af0b-c092-7bae-b6a9-e3b262dc4c59"
@@ -315,8 +315,8 @@
         "displayOrder": 6,
         "images": [
           {
-            "id": "01a20cd3-476d-796c-98e3-1519f2b73e6a",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/321e63f2-d902-4dbd-b6ff-c480b3e37b41/main/1795511502442-ra5mggyna0.jpg",
+            "id": "01a20cdc-5142-7d0e-8b1d-bbd7fa0e22f2",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/facility/321e63f2-d902-4dbd-b6ff-c480b3e37b41/main/1795512094566-90b54losdp.jpg",
             "sortOrder": 0,
             "description": "",
             "isSelected": true,
@@ -2387,8 +2387,8 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "01a20cd4-dea8-7493-b6e5-443c0ce4c1de",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_closing/1795511605993-h6wkkwc998.jpg",
+                    "id": "01a20cde-158e-78a8-9084-9beb8dc3bc23",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_closing/1795512210384-m0hz848f76.jpg",
                     "sortOrder": 0,
                     "description": "",
                     "isSelected": true,
@@ -2417,8 +2417,8 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "01a20cc8-1f48-78ab-a579-2d2cd710dc68",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_signature/1795510770653-416cyneeca.jpg",
+                    "id": "01a20cde-14d8-7015-956a-6795ef28117a",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/index_signature/1795512210384-c3fz1qqsc3.jpg",
                     "sortOrder": 0,
                     "description": "",
                     "isSelected": true,
