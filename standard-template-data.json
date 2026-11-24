@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.21.0",
-    "generatedAt": "2026-11-24T08:59:34.747992Z",
+    "version": "1.22.0",
+    "generatedAt": "2026-11-24T09:00:11.345227810Z",
     "templateType": "trip_l",
     "propertyId": "131fe50c-b86a-4a0b-a01c-5c051c25ad0e",
     "homepageId": "01a0af0b-c092-7bae-b6a9-e3b262dc4c59"
@@ -2521,7 +2521,7 @@
                     "id": "01a20cc8-1f49-7dbd-8f37-563dbc6f73e1",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/main_hero/1795510770705-9ndbghydst.jpg",
                     "sortOrder": 0,
-                    "description": "",
+                    "description": "반려견",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -2529,7 +2529,7 @@
                     "id": "01a20cc8-1db6-7e6b-a475-30a7c27624d3",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/main_hero/1795510770678-4lp2d5jtew.jpg",
                     "sortOrder": 1,
-                    "description": "",
+                    "description": "프라이빗",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -2537,7 +2537,7 @@
                     "id": "01a20cc8-1f39-7894-ac84-690c558e1f2c",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/01a0af0b-c092-7bae-b6a9-e3b262dc4c59/main_hero/1795510770688-f74ty61wrn.jpg",
                     "sortOrder": 2,
-                    "description": "",
+                    "description": "힐링",
                     "isSelected": true,
                     "blockId": null
                   },
